@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Smart Serve Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #000; }
+
+        /* Custom glow for cards to match home page buttons */
+        .glow-card:hover {
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.2);
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+<section id="payments" class="bg-black py-10 px-6 relative">
+    <div class="max-w-5xl mx-auto">
+        
+        <div class="mb-12 text-center md:text-left">
+            <h2 class="text-blue-500 font-medium uppercase tracking-[0.2em] text-xs mb-3">Secure Transactions</h2>
+            <h1 class="text-4xl md:text-5xl font-light text-white leading-tight">
+                Simple <span class="text-blue-400 font-normal">Payments</span>
+            </h1>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="bg-white/[0.02] border border-blue-500/50 p-8 rounded-[2rem] backdrop-blur-sm shadow-[0_0_25px_rgba(37,99,235,0.15)] hover:shadow-[0_0_40px_rgba(37,99,235,0.25)] transition-all duration-500">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center border border-blue-500/30">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-normal text-white">Card & Manual</h3>
+                </div>
+
+                <form class="space-y-4">
+                    <input type="text" placeholder="Cardholder Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                    <input type="text" placeholder="Card Number" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="MM/YY" class="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                        <input type="text" placeholder="CVV" class="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-xl font-medium text-sm text-white transition-all mt-4 shadow-lg shadow-blue-600/20">
+                        Pay Securely
+                    </button>
+                </form>
+            </div>
+           <div class="bg-white/[0.02] border border-blue-500/50 p-8 rounded-[2rem] backdrop-blur-sm shadow-[0_0_25px_rgba(37,99,235,0.15)] hover:shadow-[0_0_40px_rgba(37,99,235,0.25)] transition-all duration-500 flex flex-col items-center justify-center text-center">
+                <div class="mb-6">
+                    <div class="w-16 h-16 bg-blue-600/10 rounded-full flex items-center justify-center mb-4 mx-auto border border-blue-500/30">
+                        <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-normal text-white mb-2">UPI Quick Pay</h3>
+                    <p class="text-xs text-gray-500 mb-6 px-4 font-light">Scan QR or enter VPA to pay instantly via common providers.</p>
+                </div>
+
+                <div class="w-32 h-32 bg-white/5 rounded-2xl border border-blue-500/40 flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(37,99,235,0.1)]">
+                    <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest">QR CODE</span>
+                </div>
+
+                <div class="w-full space-y-3">
+                    <div class="flex gap-2">
+                        <input type="text" placeholder="username@upi" class="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                        <button class="bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white px-5 py-3 rounded-xl text-xs font-bold transition">Verify</button>
+                    </div>
+                    <p class="text-[10px] text-gray-600 font-light">All payments are encrypted and secure.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Serve Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; overflow-x: hidden; }
+        
+        .unified-glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 50px rgba(37, 99, 235, 0.15), 
+                        inset 0 0 20px rgba(59, 130, 246, 0.05);
+            transition: all 0.7s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-bold text-white shadow-lg shadow-blue-600/30">S</div>
+                <span class="text-xl font-bold tracking-tight uppercase text-white">Smart Serve</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#payments" class="hover:text-blue-400 transition">Payments</a>
+                <a href="#about" class="hover:text-blue-400 transition">About Us</a>
+            </div>
+
+            <a href="login.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-sm font-bold transition text-white">
+                Login
+            </a>
+        </div>
+    </nav>
+
+    <div id="home" class="min-h-screen flex items-center justify-center p-6 md:p-12 pt-32">
+        <div class="unified-glass-card w-full max-w-7xl relative overflow-hidden rounded-[3rem]">
+            <section class="relative px-10 py-16 md:pb-28 flex items-center min-h-[600px]">
+                <div class="absolute inset-0 z-0 opacity-25 pointer-events-none">
+                    <img src="https://i.pinimg.com/1200x/53/43/da/5343dafba4c41d1bead1d5e95fdeda13.jpg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent"></div>
+                </div>
+                <div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center w-full">
+                    <div class="space-y-10">
+                        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-blue-500/10 text-blue-400 text-[11px] font-bold uppercase tracking-widest">
+                            New Feature: Real-time Tracking
+                        </div>
+                        <h1 class="text-6xl md:text-8xl font-light tracking-tighter leading-none text-white">
+                            Smart Serve <br> <span class="text-blue-400 font-normal">Solutions</span>
+                        </h1>
+                        <p class="text-xl text-gray-400 font-light max-w-lg leading-relaxed">
+                            A web-based service management system that allows customers to request services, track progress, and make online payments—all in one place.
+                        </p>
+                        <button class="px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl transition shadow-2xl shadow-blue-600/40">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <section id="services" class="bg-black py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-blue-400 font-medium uppercase tracking-widest text-sm">Our Capabilities</h2>
+                <h3 class="text-4xl font-light">Service <span class="text-blue-500">Excellence</span></h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-4 bg-black border-4 border-black rounded-xl overflow-hidden">
+                <div class="md:col-span-2 h-64 relative group overflow-hidden bg-gray-900">
+                    <img src="https://i.pinimg.com/1200x/45/2a/97/452a97c2e355344757aee72d44a00166.jpg" class="w-full h-full object-cover opacity-60">
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent text-xl font-medium">Data Management</div>
+                </div>
+                <div class="md:col-span-1 h-64 relative group overflow-hidden bg-gray-900">
+                    <img src="https://i.pinimg.com/1200x/a0/c5/38/a0c53805d4dd9d8b5ceef1aa17ebc61b.jpg" class="w-full h-full object-cover opacity-60">
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent text-lg font-medium">Branding</div>
+                </div>
+                <div class="md:col-span-3 md:row-span-2 h-full min-h-[400px] relative group overflow-hidden bg-gray-900 text-3xl font-light">
+                    <img src="https://i.pinimg.com/1200x/8f/1c/13/8f1c13f3885c8f4f56f190ed8f9e6442.jpg" class="w-full h-full object-cover opacity-70">
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <h4>Smart Serve <span class="text-blue-400">Solutions</span></h4>
+ <button onclick="window.location.href='service.html'" 
+        class="w-fit px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-all shadow-lg shadow-blue-600/20 active:scale-95">
+    Know More
+</button>
+                    </div>
+                </div>
+                <div class="md:col-span-3 h-80 relative group overflow-hidden bg-gray-900">
+                    <img src="https://i.pinimg.com/1200x/de/1d/e4/de1de48bc3840534ef9ed53b589f0c43.jpg" class="w-full h-full object-cover opacity-60">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent text-2xl font-medium">Title Insurance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payments" class="bg-black py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12 text-center md:text-left">
+                <h2 class="text-blue-500 font-medium uppercase text-xs mb-3">Secure Transactions</h2>
+                <h1 class="text-5xl font-light text-white leading-tight">Simple <span class="text-blue-400">Payments</span></h1>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/[0.02] border border-blue-500/50 p-8 rounded-[2rem] shadow-[0_0_25px_rgba(37,99,235,0.15)]">
+                    <h3 class="text-xl mb-8">Card & Manual</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Cardholder Name" class="w-full bg-white/5 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                        <input type="text" placeholder="Card Number" class="w-full bg-white/5 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500/50 transition">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-xl font-medium transition shadow-lg shadow-blue-600/20">Pay Securely</button>
+                    </form>
+                </div>
+                <div class="bg-white/[0.02] border border-blue-500/50 p-8 rounded-[2rem] flex flex-col items-center justify-center text-center">
+                    <h3 class="text-xl mb-6">UPI Quick Pay</h3>
+                    <div class="w-32 h-32 bg-white/5 rounded-2xl border border-blue-500/40 flex items-center justify-center mb-6">
+                        <span class="text-[10px] text-blue-400 font-bold uppercase tracking-widest">QR CODE</span>
+                    </div>
+                    <div class="flex w-full gap-2">
+                        <input type="text" placeholder="username@upi" class="flex-1 bg-white/5 rounded-xl px-4 py-3 text-sm text-white outline-none border border-white/10">
+                        <button class="bg-blue-600/20 text-blue-400 px-5 py-3 rounded-xl text-xs font-bold transition">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-black py-20 px-6 overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-white/[0.02] border border-blue-500/50 p-10 md:p-16 rounded-[2.5rem] shadow-[0_0_30px_rgba(37,99,235,0.2)]">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-blue-500 font-medium uppercase text-xs">Our Mission</h2>
+                        <h3 class="text-4xl md:text-5xl font-light text-white">Who is <span class="text-blue-400">Smart Serve?</span></h3>
+                        <p class="text-gray-400 font-light text-lg">A technology partner dedicated to bridging the gap between complex data and seamless business operations.</p>
+                        <button class="px-8 py-3 bg-blue-600 border border-blue-500 rounded-xl text-sm transition shadow-lg shadow-blue-600/20">Learn More</button>
+                    </div>
+                    <div class="relative rounded-2xl overflow-hidden border border-white/10 aspect-square">
+                        <img src="https://i.pinimg.com/1200x/d7/2d/4b/d72d4bf48ee7544e76e51281586ac780.jpg" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Smart Serve Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; }
+        
+        /* THE DARK BORDER & REFLECTION STYLE */
+        .login-glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            /* Dark blue border as requested */
+            border: 1px solid rgba(59, 130, 246, 0.2); 
+            border-radius: 2.5rem;
+            /* Blue Reflection Shadow */
+            box-shadow: 0 0 50px rgba(37, 99, 235, 0.15), 
+                        inset 0 0 20px rgba(59, 130, 246, 0.05);
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .login-glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 0 70px rgba(37, 99, 235, 0.25);
+        }
+
+        /* Simple input styling with dark border reflex */
+        .dark-input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        .dark-input:focus {
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
+
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-600/5 blur-[100px] rounded-full -z-10"></div>
+
+    <div class="login-glass-card w-full max-w-md p-10 md:p-12 z-10">
+        
+        <div class="text-center mb-10">
+            <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center font-bold text-white mx-auto mb-6 shadow-lg shadow-blue-600/30 text-xl">S</div>
+            <h1 class="text-3xl font-light text-white leading-tight">
+                Welcome <span class="text-blue-400 font-normal">Back</span>
+            </h1>
+            <p class="text-gray-500 text-sm mt-3 font-light">Enter your Smart Serve credentials</p>
+        </div>
+
+        <form action="index.html" class="space-y-6">
+            <div>
+                <label class="block text-[10px] uppercase tracking-[0.2em] text-blue-500 font-medium mb-2 ml-1">Email Address</label>
+                <input type="email" required placeholder="name@company.com" 
+                    class="dark-input w-full rounded-2xl px-6 py-4 text-sm text-white placeholder:text-gray-600">
+            </div>
+
+            <div>
+                <label class="block text-[10px] uppercase tracking-[0.2em] text-blue-500 font-medium mb-2 ml-1">Password</label>
+                <input type="password" required placeholder="••••••••" 
+                    class="dark-input w-full rounded-2xl px-6 py-4 text-sm text-white placeholder:text-gray-600">
+            </div>
+
+            <div class="flex items-center justify-between text-xs px-1">
+                <label class="flex items-center gap-2 text-gray-500 cursor-pointer">
+                    <input type="checkbox" class="rounded border-none bg-white/10 text-blue-600 focus:ring-0">
+                    Remember me
+                </label>
+                <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-2xl font-bold text-white transition-all mt-4 shadow-xl shadow-blue-600/20 active:scale-95">
+                Sign In
+            </button>
+        </form>
+
+        <div class="mt-10 pt-8 border-t border-white/5 text-center">
+            <p class="text-xs text-gray-500 font-light">
+                Don't have an account? 
+                <a href="#" class="text-blue-400 font-medium hover:underline ml-1">Request Access</a>
+            </p>
+            <a href="index.html" class="inline-block mt-6 text-[10px] text-gray-600 hover:text-white uppercase tracking-widest transition-colors">
+                ← Back to Home
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
